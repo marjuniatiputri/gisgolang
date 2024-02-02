@@ -98,7 +98,15 @@ type Point struct {
 	Coordinates []float64 `json:"coordinates" bson:"coordinates"`
 	Max         int64     `json:"max,omitempty" bson:"max,omitempty"`
 	Min         int64     `json:"min,omitempty" bson:"min,omitempty"`
-	Radius         int64     `json:"radius,omitempty" bson:"radius,omitempty"`
+	Type        int64     `json:"type,omitempty" bson:"type,omitempty"`
+	Radius      int64     `json:"radius,omitempty" bson:"radius,omitempty"`
+}
+type Asss struct {
+	Coordinates interface{} `json:"coordinates" bson:"coordinates"`
+	Max         int64       `json:"max,omitempty" bson:"max,omitempty"`
+	Min         int64       `json:"min,omitempty" bson:"min,omitempty"`
+	Type        string      `json:"type,omitempty" bson:"type,omitempty"`
+	Radius      float64     `json:"radius,omitempty" bson:"radius,omitempty"`
 }
 
 type Polyline struct {

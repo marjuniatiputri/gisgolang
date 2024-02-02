@@ -441,7 +441,7 @@ func AmbilDataGeojson(mongoenv, dbname, collname string, r *http.Request) string
 }
 
 func PostGeoIntersects(mongoenv, dbname, collname string, r *http.Request) string {
-	var coordinate Point
+	var coordinate Asss
 	var response Pesan
 	response.Status = false
 	mconn := SetConnection(mongoenv, dbname)
